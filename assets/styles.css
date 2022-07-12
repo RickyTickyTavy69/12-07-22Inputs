@@ -1,0 +1,94 @@
+/***********************************GENERAL*********************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*****************************HTML Formular********************************/
+
+.htmlFormular {
+  /*damit die Seite nicht unendlich breit werden kann.*/
+  max-width: 1400px;
+  margin: 10vh auto;
+  display: flex;
+  justify-content: center;
+}
+
+.htmlForm {
+  /*Form horizontell positionieren*/
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 700;
+}
+
+.names_row {
+  display: flex;
+  gap: 1%;
+  margin-bottom: 1vh;
+}
+
+.names_row input {
+  width: 50%;
+}
+
+form input,
+textarea:focus {
+  outline: none;
+}
+
+form input,
+textarea {
+  margin-bottom: 1vh;
+  color: red;
+}
+
+/*damit die Hintergrundfarbe bei den Tags die selbe ist, wie die vom Body*/
+
+form input,
+textarea {
+  background-color: transparent;
+  border: 1px solid gray;
+}
+
+form input {
+  padding: 1% 0 1% 1%;
+}
+
+textarea {
+  resize: none;
+}
+
+[name="selector"] {
+  margin-bottom: 2vh;
+  background-color: #f6f6f6;
+  border-radius: 4px;
+}
+
+[name="selector"]:focus {
+  outline: none;
+}
+
+.required:after {
+  content: "*";
+  color: red;
+  font-size: 1.1em;
+  margin-left: 1%;
+}
+
+[type="submit"] {
+  background-color: #4895a2;
+  color: white;
+  border: none;
+  padding: 1% 0 1% 0;
+  margin-top: 1vh;
+}
+
+[type="submit"]:hover {
+  background-color: #0b172f;
+}
